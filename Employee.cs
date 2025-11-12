@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Övning_1___Personalregister
+namespace Personalregister
 {
     internal class Employee
     {

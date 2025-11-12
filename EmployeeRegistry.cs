@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Övning_1___Personalregister
+namespace Personalregister
 {
     internal class EmployeeRegistry
     {
@@ -18,13 +18,13 @@ namespace Övning_1___Personalregister
         public void AddEmployee()
         {
             Console.Write("\nEnter name: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
 
             int salary;
             while (true)
             {
                 Console.Write("\nEnter salary: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine() ?? string.Empty;
 
                 if(int.TryParse(input, out salary) && salary >= 0)
                 {
@@ -42,7 +42,7 @@ namespace Övning_1___Personalregister
         public void RemoveEmployeeById()
         {
             Console.Write("\nEnter id (0 to cancel): ");
-            string id = Console.ReadLine();
+            string id = Console.ReadLine() ?? string.Empty;
 
             if (id == "0")
             {
